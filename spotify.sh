@@ -28,6 +28,8 @@ while true ;do
     spotstart
      sleep 5
     spotplay
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next 1>/dev/null 2>&1
+
   else
     if [ "$temp1" != "$temp2" ]; then 
       echo "$temp1"
